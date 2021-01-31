@@ -1,0 +1,28 @@
+{
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ES2020",
+        "moduleResolution": "Node",
+        "baseUrl": "",
+        "lib": [],
+        "types": [],
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true
+    },
+    "typeAcquisition": {
+        "enable": false
+    }
+}

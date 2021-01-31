@@ -1,0 +1,40 @@
+{
+    "folders": [
+        {
+            "name": "(src) app",
+            "path": "source/app"
+        },
+        {
+            "name": "(src) app-workers",
+            "path": "source/app-workers"
+        },
+        {
+            "name": "(src) core",
+            "path": "source/core"
+        },
+        {
+            "name": "(src) editor",
+            "path": "source/editor"
+        },
+        {
+            "name": "(src) server",
+            "path": "source/server"
+        },
+        {
+            "name": "loaders",
+            "path": "loaders"
+        },
+        {
+            "name": "plugins",
+            "path": "plugins"
+        },
+        {
+            "name": "scripts",
+            "path": "scripts"
+        },
+        {
+            "name": "template",
+            "path": "template"
+        }
+    ]
+}

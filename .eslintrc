@@ -1,0 +1,66 @@
+{
+    "root": true,
+    "overrides": [
+        {
+            "files": [
+                "loaders/**/*.js",
+                "plugins/**/*.js",
+                "scripts/**/*.js",
+                "template/**/*.js"
+            ],
+            "plugins": [
+                "app-rules"
+            ],
+            "extends": [
+                "eslint:recommended"
+            ],
+            "parserOptions": {
+                "sourceType": "module"
+            },
+            "env": {
+                "node": true,
+                "es2020": true
+            },
+            "rules": {
+                "comma-dangle": ["error", "never"],
+                "indent": ["error", 4],
+                "quotes": ["error", "double"],
+                "semi": ["error", "never"]
+            }
+        },
+        {
+            "files": [
+                "source/**/*.ts",
+                "source/**/*.tsx"
+            ],
+            "plugins": [
+                "@typescript-eslint"
+            ],
+            "extends": [
+                "eslint:recommended",
+                "plugin:@typescript-eslint/recommended"
+            ],
+            "parser": "@typescript-eslint/parser",
+            "rules": {
+                "app-rules/default-import-names": ["error", [
+                    "app/",
+                    "app-workers/",
+                    "core/",
+                    "editor/",
+                    "server/"
+                ]],
+                "comma-dangle": "off",
+                "indent": "off",
+                "prefer-const": "off",
+                "quotes": "off",
+                "semi": "off",
+                "@typescript-eslint/comma-dangle": ["error", "never"],
+                "@typescript-eslint/indent": ["error", 4],
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/no-inferrable-types": "off",
+                "@typescript-eslint/quotes": ["error", "double"],
+                "@typescript-eslint/semi": ["error", "never"]
+            }
+        }
+    ]
+}
